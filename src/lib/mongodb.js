@@ -4,6 +4,7 @@ import { MongoClient } from "mongodb";
 const uri = process.env.MONGODB_URI; // ex: mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority
 const options = {
   serverApi: {
+    version: "1",
     strict: true,
     deprecationErrors: true,
   }
